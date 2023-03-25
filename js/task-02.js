@@ -2,6 +2,7 @@ const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Con
 
 const ingredientsListArray = [];
 
+// const choice = isWeatherSunny ? forEach : map;
 ingredients.forEach(ingredient => {
   const listItemEl = document.createElement('li');
   listItemEl.textContent = ingredient;
