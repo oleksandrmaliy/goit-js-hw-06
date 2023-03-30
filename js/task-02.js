@@ -1,14 +1,10 @@
 const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
 
-const ingredientsListArray = [];
-
-// const choice = isWeatherSunny ? forEach : map;
-ingredients.forEach(ingredient => {
+const ingredientsListArray = ingredients.map(ingredient => {
   const listItemEl = document.createElement('li');
   listItemEl.textContent = ingredient;
   listItemEl.classList.add('item');
-
-  ingredientsListArray.push(listItemEl);
+  return listItemEl;
 });
 
 const ingredientsListEl = document.querySelector('#ingredients');

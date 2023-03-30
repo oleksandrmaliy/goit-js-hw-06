@@ -1,6 +1,10 @@
-const counterValue = document.querySelector('#value');
-const decrementBtn = document.querySelector('[data-action="decrement"]');
-const incrementBtn = document.querySelector('[data-action="increment"]');
+const counterSet = {
+  counterValue: document.querySelector('#value'),
+  decrementBtn: document.querySelector('[data-action="decrement"]'),
+  incrementBtn: document.querySelector('[data-action="increment"]'),
+};
+
+const { counterValue, decrementBtn, incrementBtn } = counterSet;
 
 let counterValueNumber = 0;
 
